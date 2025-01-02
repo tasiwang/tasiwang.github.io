@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>卉的點心小舖-菜單</title>
+    <meta content="包子饅頭店" name="keywords">
+    <meta content="卉的點心小舖- 窮就一生精力，秉持職人匠心，以誠信的態度對待每一位消費，堅持不添加人工香料與色素，只採用純天然食材入色，口感細緻Q彈的包子饅頭。滿滿的餡料與新鮮的食材，芬芳可口。" name="description">
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #ff8c42;
+            color: #fff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #d35400;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+		.menu-item img {
+			width: 100%;
+			height: auto;
+			max-height: 200px; /* 根據需要調整最大高度 */
+			object-fit: contain; /* 確保圖片維持比例，顯示完整內容 */
+		}
+
+        .menu-item h3 {
+            color: #333;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #666;
+            padding: 0 1rem 1rem;
+        }
+
+        .menu-item .item-price {
+            color: #e74c3c;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .menu-item button {
+            background-color: #ff8c42;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .menu-item button:hover {
+            background-color: #e07b36;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #444;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        卉的點心小舖
+    </header>
+
+    <div class="container">
+        <h2>美味包子饅頭任您選擇</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="蔓越莓起士.jpg" alt="蔓越莓起士">
+                <h3>蔓越莓起士</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+            <div class="menu-item">
+                <img src="壽桃.jpg" alt="壽桃">
+                <h3>壽桃</h3>
+                <div class="item-price">NT$25</div>
+            </div>
+            <div class="menu-item">
+                <img src="紫米地瓜.jpg" alt="紫米地瓜">
+                <h3>紫米地瓜</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+            <div class="menu-item">
+                <img src="紫米包.jpg" alt="紫米包">
+                <h3>紫米包</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			 <div class="menu-item">
+                <img src="香菇素包.jpg" alt="香菇素包">
+                <h3>香菇素包</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+            <div class="menu-item">
+                <img src="芝麻包.jpg" alt="芝麻包">
+                <h3>芝麻包</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+            <div class="menu-item">
+                <img src="香菇肉包.jpg" alt="香菇肉包">
+                <h3>香菇肉包</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="顆粒紅豆.jpg" alt="顆粒紅豆">
+                <h3>顆粒紅豆</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="雙色起士.jpg" alt="雙色起士">
+                <h3>雙色起士</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="鮮奶饅頭.png" alt="鮮奶饅頭">
+                <h3>鮮奶饅頭</h3>
+                <div class="item-price">NT$13</div>
+            </div>
+			<div class="menu-item">
+                <img src="黑糖饅頭.png" alt="黑糖饅頭">
+                <h3>黑糖饅頭</h3>
+                <div class="item-price">NT$13</div>
+            </div>
+			<div class="menu-item">
+                <img src="奶皇包.png" alt="奶皇包">
+                <h3>奶皇包</h3>
+                <div class="item-price">NT$13</div>
+            </div>
+			<div class="menu-item">
+                <img src="芋頭捲.png" alt="芋頭捲">
+                <h3>芋頭捲</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="心型紅豆.png" alt="心型紅豆">
+                <h3>心型紅豆</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="紫蔓饅頭.png" alt="紫蔓饅頭">
+                <h3>紫蔓饅頭</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="南瓜饅頭.png" alt="南瓜饅頭">
+                <h3>南瓜饅頭</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="養生饅頭.png" alt="養生饅頭">
+                <h3>養生饅頭</h3>
+                <div class="item-price">NT$20</div>
+            </div>
+			<div class="menu-item">
+                <img src="芋頭饅頭.png" alt="芋頭饅頭">
+                <h3>芋頭饅頭</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="紅麴核桃.png" alt="紅麴核桃">
+                <h3>紅麴核桃</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="蔬菜核桃.png" alt="蔬菜核桃">
+                <h3>蔬菜核桃</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="三色地瓜.png" alt="三色地瓜">
+                <h3>三色地瓜</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="雙色起士.png" alt="雙色起士">
+                <h3>雙色起士</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="全麥饅頭.png" alt="全麥饅頭">
+                <h3>全麥饅頭</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="全麥十穀.png" alt="全麥十穀">
+                <h3>全麥十穀</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="雙色饅頭.png" alt="雙色饅頭">
+                <h3>雙色饅頭</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+			<div class="menu-item">
+                <img src="黑白小饅頭.png" alt="黑白小饅頭">
+                <h3>黑白小饅頭</h3>
+                <div class="item-price">NT$30</div>
+            </div>
+			<div class="menu-item">
+                <img src="綜合小饅頭.png" alt="綜合小饅頭">
+                <h3>綜合小饅頭</h3>
+                <div class="item-price">NT$55</div>
+            </div>
+			<div class="menu-item">
+                <img src="黑糖起士.png" alt="黑糖起士">
+                <h3>黑糖起士</h3>
+                <div class="item-price">NT$22</div>
+            </div>
+			<div class="menu-item">
+                <img src="地瓜花捲.png" alt="地瓜花捲">
+                <h3>地瓜花捲</h3>
+                <div class="item-price">NT$18</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 卉的點心小舖 | 訂購熱線：05-2329837<br>
+		營業時間：14:00開始~20:00結束 ☆星期日公休<br>
+		嘉義市西區友忠路783號(近北興街)
+    </footer>
+</body>
+</html>
