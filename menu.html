@@ -2,286 +2,441 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卉的點心小舖-菜單</title>
-    <meta content="包子饅頭店" name="keywords">
-    <meta content="卉的點心小舖- 窮就一生精力，秉持職人匠心，以誠信的態度對待每一位消費，堅持不添加人工香料與色素，只採用純天然食材入色，口感細緻Q彈的包子饅頭。滿滿的餡料與新鮮的食材，芬芳可口。" name="description">
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="bg.jpg" />
-    <meta property="og:width" content="600" />
-    <meta property="og:height" content="450" />
-    <meta property="og:title" content="卉的點心小舖菜單" />
-    <meta property="og:description" content="卉的點心小舖- 窮就一生精力，秉持職人匠心，以誠信的態度對待每一位消費，堅持不添加人工香料與色素，只採用純天然食材入色，口感細緻Q彈的包子饅頭。滿滿的餡料與新鮮的食材，芬芳可口。" />
-    <meta property="og:url" content="https://tasiwang.github.io" />
-    <link href="styles.css" rel="stylesheet"/>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>卉的點心小舖-菜單｜嘉義包子饅頭</title>
+    <meta name="description" content="嘉義市西區友忠路的包子饅頭店。秉持職人匠心，堅持不添加人工香料與色素，只採用純天然食材入色，口感細緻Q彈，餡料飽滿。訂購熱線 05-2329837。">
+    <meta name="theme-color" content="#a61e17">
+    <link rel="canonical" href="https://tasiwang.github.io/menu.html">
+
+    <!-- LINE / Facebook 分享預覽：圖片必須是完整網址 -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="卉的點心小舖菜單">
+    <meta property="og:description" content="堅持不添加人工香料與色素，只採用純天然食材入色，口感細緻Q彈的包子饅頭。">
+    <meta property="og:url" content="https://tasiwang.github.io/menu.html">
+    <meta property="og:image" content="https://tasiwang.github.io/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- 讓搜尋引擎讀懂店家資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "卉的點心小舖",
+        "url": "https://tasiwang.github.io/menu.html",
+        "image": "https://tasiwang.github.io/img/og.jpg",
+        "telephone": "+886-5-232-9837",
+        "priceRange": "$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "友忠路783號",
+            "addressLocality": "西區",
+            "addressRegion": "嘉義市",
+            "postalCode": "600",
+            "addressCountry": "TW"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "14:00",
+            "closes": "20:00"
         }
+    }
+    </script>
+
+    <style>
+        :root {
+            --red: #a61e17;
+            --red-dark: #7f150f;
+            --yellow: #f6c945;
+            --paper: #fbf6ec;
+            --card: #fffdf9;
+            --line: #e8decb;
+            --ink: #2f2520;
+            --muted: #6f6157;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
         body {
-            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
             line-height: 1.6;
-            background-color: #fdfdfd;
-            color: #333;
-            margin: 0;
-            padding: 0;
+            background: var(--paper);
+            color: var(--ink);
         }
 
-        /* Header Section */
-        header {
-            background-color: #ff8c42;
+        a { color: inherit; }
+
+        a:focus-visible {
+            outline: 3px solid var(--yellow);
+            outline-offset: 2px;
+        }
+
+        .wrap {
+            max-width: 1080px;
+            margin-inline: auto;
+            padding-inline: 16px;
+        }
+
+        /* 店名與聯絡方式 */
+        .hero {
+            background: var(--red);
             color: #fff;
-            padding: 1.5rem 1rem;
+            padding-block: 32px 28px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 8vw, 3.25rem);
+            line-height: 1.2;
+            letter-spacing: .06em;
+        }
+
+        .hero .slogan {
+            margin-top: 8px;
+            font-size: clamp(1rem, 3.6vw, 1.15rem);
+        }
+
+        .hero .hours {
+            margin-top: 12px;
+            font-size: .95rem;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .btn {
+            flex: 1 1 150px;
+            max-width: 240px;
+            padding: 12px 16px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 700;
             text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
+            text-decoration: none;
         }
 
-        /* Main Content */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2rem auto;
+        .btn:hover { background: var(--red-dark); }
+
+        .btn-call {
+            border-color: var(--yellow);
+            background: var(--yellow);
+            color: var(--ink);
         }
 
-        h2 {
+        .btn-call:hover { background: #ffd964; }
+
+        /* 分類導覽：純錨點，不需要 JavaScript */
+        .tabs {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--card);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .tabs ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .tabs li { flex: 1; }
+
+        .tabs a {
+            display: block;
+            padding-block: 12px;
+            font-weight: 700;
             text-align: center;
-            color: #d35400;
-            margin-bottom: 1.5rem;
-            font-size: 1.6rem;
+            text-decoration: none;
         }
 
-        /* Menu Grid */
-        .menu-grid {
+        .tabs a:hover { color: var(--red); }
+
+        /* 菜單 */
+        .category {
+            padding-top: 32px;
+            scroll-margin-top: 36px;
+        }
+
+        .category h2 {
+            margin-bottom: 14px;
+            padding-left: 12px;
+            border-left: 6px solid var(--red);
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
         }
 
-        .menu-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        @media (min-width: 640px) {
+            .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+        }
+
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        }
+
+        .item {
             overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 10px;
         }
 
-        .menu-item:hover {
-            transform: translateY(-5px);
+        .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            background: var(--line);
         }
 
-		.menu-item img {
-			width: 100%;
-			height: auto;
-			max-height: 200px; /* 根據需要調整最大高度 */
-			object-fit: contain; /* 確保圖片維持比例，顯示完整內容 */
-		}
-
-        .menu-item h3 {
-            color: #333;
-            margin: 0.5rem 0;
-            font-size: 1.2rem;
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 0 8px;
+            padding: 10px 12px 12px;
         }
 
-        .menu-item p {
-            font-size: 1rem;
-            color: #666;
-            padding: 0 1rem 1rem;
+        .item h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
         }
 
-        .menu-item .item-price {
-            color: #e74c3c;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 0.5rem 0;
+        .tag {
+            margin-left: 4px;
+            padding: 0 5px;
+            border: 1px solid var(--red);
+            border-radius: 4px;
+            color: var(--red);
+            font-size: .72rem;
+            font-weight: 400;
+            vertical-align: 2px;
+            white-space: nowrap;
         }
 
-        .menu-item button {
-            background-color: #ff8c42;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            margin-bottom: 1rem;
-            cursor: pointer;
-            font-size: 1rem;
-            border-radius: 5px;
+        .price {
+            color: var(--red);
+            font-size: 1.25rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
 
-        .menu-item button:hover {
-            background-color: #e07b36;
+        .price small {
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 400;
         }
 
-        /* Footer */
+        /* 頁尾 */
         footer {
-            text-align: center;
-            background-color: #444;
+            margin-top: 40px;
+            padding-block: 28px;
+            background: var(--ink);
             color: #fff;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        footer p + p { margin-top: 4px; }
+
+        footer .copy {
+            margin-top: 16px;
+            color: #cfc5ba;
+            font-size: .85rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
         }
     </style>
 </head>
 <body>
-    <header>
-        卉的點心小舖
-    </header>
-
-    <div class="container">
-        <h2>美味包子饅頭任您選擇</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="蔓越莓起士.jpg" alt="蔓越莓起士">
-                <h3>蔓越莓起士</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-            <div class="menu-item">
-                <img src="壽桃.jpg" alt="壽桃">
-                <h3>壽桃</h3>
-                <div class="item-price">NT$25</div>
-            </div>
-            <div class="menu-item">
-                <img src="紫米地瓜.jpg" alt="紫米地瓜">
-                <h3>紫米地瓜</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-            <div class="menu-item">
-                <img src="紫米包.jpg" alt="紫米包">
-                <h3>紫米包</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			 <div class="menu-item">
-                <img src="香菇素包.jpg" alt="香菇素包">
-                <h3>香菇素包</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-            <div class="menu-item">
-                <img src="芝麻包.jpg" alt="芝麻包">
-                <h3>芝麻包</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-            <div class="menu-item">
-                <img src="香菇肉包.jpg" alt="香菇肉包">
-                <h3>香菇肉包</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="顆粒紅豆.jpg" alt="顆粒紅豆">
-                <h3>顆粒紅豆</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="雙色起士.jpg" alt="雙色起士">
-                <h3>雙色起士</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="鮮奶饅頭.png" alt="鮮奶饅頭">
-                <h3>鮮奶饅頭</h3>
-                <div class="item-price">NT$13</div>
-            </div>
-			<div class="menu-item">
-                <img src="黑糖饅頭.png" alt="黑糖饅頭">
-                <h3>黑糖饅頭</h3>
-                <div class="item-price">NT$13</div>
-            </div>
-			<div class="menu-item">
-                <img src="奶皇包.png" alt="奶皇包">
-                <h3>奶皇包</h3>
-                <div class="item-price">NT$13</div>
-            </div>
-			<div class="menu-item">
-                <img src="芋頭捲.png" alt="芋頭捲">
-                <h3>芋頭捲</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="心型紅豆.png" alt="心型紅豆">
-                <h3>心型紅豆</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="紫蔓饅頭.png" alt="紫蔓饅頭">
-                <h3>紫蔓饅頭</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="南瓜饅頭.png" alt="南瓜饅頭">
-                <h3>南瓜饅頭</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="養生饅頭.png" alt="養生饅頭">
-                <h3>養生饅頭</h3>
-                <div class="item-price">NT$20</div>
-            </div>
-			<div class="menu-item">
-                <img src="芋頭饅頭.png" alt="芋頭饅頭">
-                <h3>芋頭饅頭</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="紅麴核桃.png" alt="紅麴核桃">
-                <h3>紅麴核桃</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="蔬菜核桃.png" alt="蔬菜核桃">
-                <h3>蔬菜核桃</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="三色地瓜.png" alt="三色地瓜">
-                <h3>三色地瓜</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="全麥饅頭.png" alt="全麥饅頭">
-                <h3>全麥饅頭</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="全麥十穀.png" alt="全麥十穀">
-                <h3>全麥十穀</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="雙色饅頭.png" alt="雙色饅頭">
-                <h3>雙色饅頭</h3>
-                <div class="item-price">NT$18</div>
-            </div>
-			<div class="menu-item">
-                <img src="黑白小饅頭.png" alt="黑白小饅頭">
-                <h3>黑白小饅頭</h3>
-                <div class="item-price">NT$30</div>
-            </div>
-			<div class="menu-item">
-                <img src="綜合小饅頭.png" alt="綜合小饅頭">
-                <h3>綜合小饅頭</h3>
-                <div class="item-price">NT$55</div>
-            </div>
-			<div class="menu-item">
-                <img src="黑糖起士.png" alt="黑糖起士">
-                <h3>黑糖起士</h3>
-                <div class="item-price">NT$22</div>
-            </div>
-			<div class="menu-item">
-                <img src="地瓜花捲.png" alt="地瓜花捲">
-                <h3>地瓜花捲</h3>
-                <div class="item-price">NT$18</div>
+    <header class="hero">
+        <div class="wrap">
+            <h1>卉的點心小舖</h1>
+            <p class="slogan">不添加人工香料與色素，只用純天然食材入色</p>
+            <p class="hours">營業時間 14:00～20:00　☆星期日公休</p>
+            <div class="actions">
+                <a class="btn btn-call" href="tel:+88652329837">撥打 05-2329837</a>
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%98%89%E7%BE%A9%E5%B8%82%E8%A5%BF%E5%8D%80%E5%8F%8B%E5%BF%A0%E8%B7%AF783%E8%99%9F" target="_blank" rel="noopener">開啟地圖導航</a>
             </div>
         </div>
-    </div>
+    </header>
+
+    <nav class="tabs" aria-label="菜單分類">
+        <ul class="wrap">
+            <li><a href="#baozi">包子</a></li>
+            <li><a href="#huajuan">花捲</a></li>
+            <li><a href="#mantou">饅頭</a></li>
+            <li><a href="#mini">小饅頭</a></li>
+        </ul>
+    </nav>
+
+    <main class="wrap">
+        <section class="category" id="baozi">
+            <h2>包子</h2>
+            <ul class="grid">
+                <li class="item">
+                    <img src="img/香菇肉包.webp" alt="香菇肉包" width="640" height="480">
+                    <div class="info"><h3>香菇肉包</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/香菇素包.webp" alt="香菇素包" width="640" height="480">
+                    <div class="info"><h3>香菇素包</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/紫米包.webp" alt="紫米包" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>紫米包</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/紫米地瓜.webp" alt="紫米地瓜" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>紫米地瓜</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/蔓越莓起士.webp" alt="蔓越莓起士" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>蔓越莓起士</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/雙色起士.webp" alt="雙色起士" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>雙色起士</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/壽桃.webp" alt="壽桃" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>壽桃</h3><p class="price">$25<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/顆粒紅豆.webp" alt="顆粒紅豆" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>顆粒紅豆</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/芝麻包.webp" alt="芝麻包" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>芝麻包</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/奶皇包.webp" alt="奶皇包" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>奶皇包</h3><p class="price">$13<small>/個</small></p></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category" id="huajuan">
+            <h2>花捲</h2>
+            <ul class="grid">
+                <li class="item">
+                    <img src="img/芋頭捲.webp" alt="芋頭捲" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>芋頭捲</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/地瓜花捲.webp" alt="地瓜花捲" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>地瓜花捲</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/心型紅豆.webp" alt="心型紅豆" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>心型紅豆</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/黑糖起士.webp" alt="黑糖起士" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>黑糖起士</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category" id="mantou">
+            <h2>饅頭</h2>
+            <ul class="grid">
+                <li class="item">
+                    <img src="img/鮮奶饅頭.webp" alt="鮮奶饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>鮮奶饅頭</h3><p class="price">$13<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/黑糖饅頭.webp" alt="黑糖饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>黑糖饅頭</h3><p class="price">$13<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/雙色饅頭.webp" alt="雙色饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>雙色饅頭</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/全麥饅頭.webp" alt="全麥饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>全麥饅頭</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/南瓜饅頭.webp" alt="南瓜饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>南瓜饅頭</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/紫蔓饅頭.webp" alt="紫蔓饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>紫蔓饅頭</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/三色地瓜.webp" alt="三色地瓜" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>三色地瓜</h3><p class="price">$18<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/養生饅頭.webp" alt="養生饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>養生饅頭</h3><p class="price">$20<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/芋頭饅頭.webp" alt="芋頭饅頭" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>芋頭饅頭</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/紅麴核桃.webp" alt="紅麴核桃" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>紅麴核桃</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/蔬菜核桃.webp" alt="蔬菜核桃" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>蔬菜核桃</h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/全麥十穀.webp" alt="全麥十穀，無糖" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>全麥十穀<span class="tag">無糖</span></h3><p class="price">$22<small>/個</small></p></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category" id="mini">
+            <h2>小饅頭</h2>
+            <ul class="grid">
+                <li class="item">
+                    <img src="img/黑白小饅頭.webp" alt="黑白小饅頭，袋裝" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>黑白小饅頭</h3><p class="price">$30<small>/包</small></p></div>
+                </li>
+                <li class="item">
+                    <img src="img/綜合小饅頭.webp" alt="綜合小饅頭，袋裝" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="info"><h3>綜合小饅頭</h3><p class="price">$55<small>/包</small></p></div>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        &copy; 2024 卉的點心小舖 | 訂購熱線：05-2329837<br>
-		營業時間：14:00開始~20:00結束 ☆星期日公休<br>
-		嘉義市西區友忠路783號(近北興街)
+        <div class="wrap">
+            <h2>卉的點心小舖</h2>
+            <p>訂購熱線：<a href="tel:+88652329837">05-2329837</a></p>
+            <p>營業時間：14:00～20:00　☆星期日公休</p>
+            <p>地址：嘉義市西區友忠路783號（近北興街）</p>
+            <p class="copy">&copy; 卉的點心小舖</p>
+        </div>
     </footer>
 </body>
 </html>
